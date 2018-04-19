@@ -5,6 +5,8 @@ using UnityEngine.UI;
 
 public class TextHealthLog : MonoBehaviour {
 
+    public Health health;
+
     Text text;
 
     private void Start()
@@ -13,6 +15,6 @@ public class TextHealthLog : MonoBehaviour {
     }
 
     void Update () {
-        text.text = "Health: " + Health.GetHealth();
+        text.text = "Health: " + health.GetHealth();
 	}
 }

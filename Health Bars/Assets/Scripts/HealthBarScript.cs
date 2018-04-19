@@ -5,6 +5,8 @@ using UnityEngine.UI;
 
 public class HealthBarScript : MonoBehaviour {
 
+    public Health health;
+
     Image healthBar;
 
 
@@ -17,6 +19,6 @@ public class HealthBarScript : MonoBehaviour {
     // Update is called once per frame
     void Update()
     {
-        healthBar.fillAmount = (float)Health.GetHealth() / Health.maxhealth;
+        healthBar.fillAmount = (float)health.GetHealth() / health.maxhealth;
     }
 }

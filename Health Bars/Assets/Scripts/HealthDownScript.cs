@@ -4,9 +4,11 @@ using UnityEngine;
 
 public class HealthDownScript : MonoBehaviour {
 
-	public void HealthDown()
+    public Health health;
+
+    public void HealthDown()
     {
-        if(Health.GetHealth() >= 1)
-            Health.SetHealth(Health.GetHealth() - 1);
+        if(health.GetHealth() >= 1)
+            health.SetHealth(health.GetHealth() - 1);
     }
 }

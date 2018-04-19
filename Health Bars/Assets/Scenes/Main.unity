@@ -222,7 +222,6 @@ GameObject:
   - component: {fileID: 162328746}
   - component: {fileID: 162328745}
   - component: {fileID: 162328744}
-  - component: {fileID: 162328747}
   m_Layer: 5
   m_Name: HealthUp
   m_TagString: Untagged
@@ -334,17 +333,6 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 162328742}
---- !u!114 &162328747
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 162328742}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 73be4cf6ff3fb5a4496c155f049c44e6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &171028683
 GameObject:
   m_ObjectHideFlags: 0
@@ -425,6 +413,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f2cc7f10d45b0e04b853a710dff75912, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  health: {fileID: 2062850439}
 --- !u!1 &640425216
 GameObject:
   m_ObjectHideFlags: 0
@@ -505,6 +494,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 630870e8da13eb646867821ef3715077, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  health: {fileID: 2062850439}
   zero: {fileID: 21300000, guid: cf9a3b0e6f97a904a9e3962226375901, type: 3}
   one: {fileID: 21300002, guid: cf9a3b0e6f97a904a9e3962226375901, type: 3}
   two: {fileID: 21300004, guid: cf9a3b0e6f97a904a9e3962226375901, type: 3}
@@ -1103,6 +1093,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c83bea2320ac7dd48a8f1d166c1ba474, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  health: {fileID: 2062850439}
 --- !u!114 &1990925932
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1171,6 +1162,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 73be4cf6ff3fb5a4496c155f049c44e6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  health: {fileID: 2062850439}
 --- !u!114 &2062850438
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1182,6 +1174,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f6cce42482138634aa7aadf12f12eee0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  health: {fileID: 2062850439}
 --- !u!114 &2062850439
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1193,6 +1186,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2607031dba0dbc54ca18d0b379c9031a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  maxhealth: 3
+  health: 3
 --- !u!4 &2062850440
 Transform:
   m_ObjectHideFlags: 0

@@ -6,17 +6,17 @@ using UnityEngine.UI;
 public class Health : MonoBehaviour {
 
     [SerializeField]
-    public static int maxhealth = 3;
+    public int maxhealth = 3;
     [SerializeField]
-    private static int health = 3;
+    private int health = 3;
 	
 
-    public static int GetHealth()
+    public int GetHealth()
     {
         return health;
     }
 
-    public static void SetHealth(int newHealth)
+    public void SetHealth(int newHealth)
     {
         health = newHealth;
     }

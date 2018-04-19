@@ -5,6 +5,7 @@ using UnityEngine.UI;
 
 public class LiveCounter : MonoBehaviour
 {
+    public Health health;
 
     [SerializeField]
     Sprite zero;
@@ -27,7 +28,7 @@ public class LiveCounter : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        switch (Health.GetHealth())
+        switch (health.GetHealth())
         {
             case 0:
                 lives.sprite = zero;
